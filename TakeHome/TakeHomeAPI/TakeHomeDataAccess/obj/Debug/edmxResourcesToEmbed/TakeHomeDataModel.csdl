@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Contract">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="Int32" />
+    <Property Name="SaleDate" Type="DateTime" Precision="0" />
+    <Property Name="CoveragePlan" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NetPrice" Type="Int32" />
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CoveragePlan">
+    <Key>
+      <PropertyRef Name="PlanID" />
+    </Key>
+    <Property Name="CoveragePlan1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EligibilityDateFrom" Type="DateTime" Precision="0" />
+    <Property Name="EligibilityDateTo" Type="DateTime" Precision="0" />
+    <Property Name="EligibilityCountry" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PlanID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RateChart">
+    <Key>
+      <PropertyRef Name="RateChartID" />
+    </Key>
+    <Property Name="CoveragePlan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Gender" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="NetPrice" Type="Int32" />
+    <Property Name="RateChartID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="masterEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Contracts" EntityType="Self.Contract" />
+    <EntitySet Name="CoveragePlans" EntityType="Self.CoveragePlan" />
+    <EntitySet Name="RateCharts" EntityType="Self.RateChart" />
+  </EntityContainer>
+</Schema>

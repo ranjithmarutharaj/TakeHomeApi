@@ -1,0 +1,100 @@
+10-06-2020 14:17:34	This log contains information about the import schema operation into project 'TakeHomeDataBase' on computer 'DESKTOP-1AFNG3I' by user 'Hp'.
+10-06-2020 14:17:34	Import of database schema has started.
+10-06-2020 14:17:36	Gathering error messages
+10-06-2020 14:17:36	Gathering cryptographic providers
+10-06-2020 14:17:36	Gathering credentials
+10-06-2020 14:17:36	Gathering logins
+10-06-2020 14:17:36	Gathering server roles
+10-06-2020 14:17:36	Gathering server role memberships
+10-06-2020 14:17:36	Gathering linked servers
+10-06-2020 14:17:36	Gathering linked server logins
+10-06-2020 14:17:36	Gathering routes
+10-06-2020 14:17:36	Gathering ddl triggers
+10-06-2020 14:17:36	Gathering encrypted and clr ddl triggers
+10-06-2020 14:17:36	Gathering event notifications
+10-06-2020 14:17:36	Gathering server audits
+10-06-2020 14:17:36	Gathering server audit specifications
+10-06-2020 14:17:36	Gathering event notifications
+10-06-2020 14:17:41	Gathering database credentials
+10-06-2020 14:17:41	Gathering database options
+10-06-2020 14:17:41	Gathering users
+10-06-2020 14:17:41	Gathering roles
+10-06-2020 14:17:41	Gathering application roles
+10-06-2020 14:17:41	Gathering role memberships
+10-06-2020 14:17:41	Gathering filegroups
+10-06-2020 14:17:41	Gathering files
+10-06-2020 14:17:41	Gathering full-text catalogs
+10-06-2020 14:17:41	Gathering assemblies
+10-06-2020 14:17:41	Gathering certificates
+10-06-2020 14:17:41	Gathering asymmetric keys
+10-06-2020 14:17:41	Gathering symmetric keys
+10-06-2020 14:17:41	Gathering encrypted symmetric keys
+10-06-2020 14:17:41	Gathering database encryption keys
+10-06-2020 14:17:41	Gathering schemas
+10-06-2020 14:17:41	Gathering XML schema collections
+10-06-2020 14:17:41	Gathering user-defined data types
+10-06-2020 14:17:41	Gathering user-defined types
+10-06-2020 14:17:41	Gathering table types
+10-06-2020 14:17:41	Gathering unique keys for table types
+10-06-2020 14:17:41	Gathering primary keys for table types
+10-06-2020 14:17:41	Gathering indexes for table types
+10-06-2020 14:17:42	Gathering check constraints for table types
+10-06-2020 14:17:42	Gathering default constraints for table types
+10-06-2020 14:17:42	Gathering partition functions
+10-06-2020 14:17:42	Gathering partition schemes
+10-06-2020 14:17:42	Gathering functions
+10-06-2020 14:17:42	Gathering encrypted functions
+10-06-2020 14:17:42	Gathering aggregates
+10-06-2020 14:17:42	Gathering procedures
+10-06-2020 14:17:42	Gathering encrypted procedures
+10-06-2020 14:17:42	Gathering tables
+10-06-2020 14:17:42	Gathering primary keys
+10-06-2020 14:17:42	Gathering unique constraints
+10-06-2020 14:17:42	Gathering foreign keys
+10-06-2020 14:17:42	Gathering default constraints
+10-06-2020 14:17:42	Gathering check constraints
+10-06-2020 14:17:42	Gathering views
+10-06-2020 14:17:42	Gathering encrypted views
+10-06-2020 14:17:42	Gathering indexes
+10-06-2020 14:17:42	Gathering statistics
+10-06-2020 14:17:42	Gathering full-text index stoplists
+10-06-2020 14:17:42	Gathering search property lists
+10-06-2020 14:17:42	Gathering search properties
+10-06-2020 14:17:42	Gathering full-text indexes
+10-06-2020 14:17:42	Gathering column store indexes
+10-06-2020 14:17:42	Gathering spatial indexes
+10-06-2020 14:17:42	Gathering XML indexes
+10-06-2020 14:17:42	Gathering Selective XML indexes
+10-06-2020 14:17:42	Gathering encrypted triggers
+10-06-2020 14:17:42	Gathering triggers
+10-06-2020 14:17:42	Gathering encrypted and clr ddl triggers
+10-06-2020 14:17:42	Gathering ddl triggers
+10-06-2020 14:17:42	Gathering synonyms
+10-06-2020 14:17:42	Gathering defaults
+10-06-2020 14:17:42	Gathering data constraint uddt bindings
+10-06-2020 14:17:42	Gathering rules
+10-06-2020 14:17:42	Gathering data constraint uddt bindings
+10-06-2020 14:17:42	Gathering message types
+10-06-2020 14:17:42	Gathering queues
+10-06-2020 14:17:42	Gathering contracts
+10-06-2020 14:17:42	Gathering services
+10-06-2020 14:17:42	Gathering routes
+10-06-2020 14:17:42	Gathering event notifications
+10-06-2020 14:17:42	Gathering remote service bindings
+10-06-2020 14:17:42	Gathering broker priorities
+10-06-2020 14:17:42	Gathering database audit specifications
+10-06-2020 14:17:42	Gathering signatures
+10-06-2020 14:17:42	Gathering data compression options
+10-06-2020 14:17:42	Gathering sequence types
+10-06-2020 14:17:42	Gathering security policies
+10-06-2020 14:17:42	Gather column encryption keys
+10-06-2020 14:17:42	Gathering column master keys
+10-06-2020 14:17:42	Gathering external data sources
+10-06-2020 14:17:42	Gathering external file formats
+10-06-2020 14:17:42	Gathering external tables
+10-06-2020 14:17:42	Gathering extended properties
+10-06-2020 14:17:42	Scanning project for duplicate elements
+10-06-2020 14:17:42	Finished duplicate element processing
+10-06-2020 14:17:43	Finished importing database.
+10-06-2020 14:17:43	A summary of the import was saved to the following location: C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataBase\Import Schema Logs\TakeHomeDataBase_20200610084734.log
+10-06-2020 14:17:43	Click Finish to continue...

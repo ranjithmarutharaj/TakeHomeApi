@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="masterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Contracts">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+    </Key>
+    <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+    <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="Gender" Type="varchar" MaxLength="5" />
+    <Property Name="Country" Type="varchar" MaxLength="10" />
+    <Property Name="SaleDate" Type="date" />
+    <Property Name="CoveragePlan" Type="varchar" MaxLength="10" />
+    <Property Name="NetPrice" Type="int" />
+    <Property Name="DOB" Type="date" />
+  </EntityType>
+  <EntityType Name="CoveragePlan">
+    <Key>
+      <PropertyRef Name="PlanID" />
+    </Key>
+    <Property Name="CoveragePlan" Type="varchar" MaxLength="50" />
+    <Property Name="EligibilityDateFrom" Type="date" />
+    <Property Name="EligibilityDateTo" Type="date" />
+    <Property Name="EligibilityCountry" Type="varchar" MaxLength="20" />
+    <Property Name="PlanID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RateChart">
+    <Key>
+      <PropertyRef Name="RateChartID" />
+    </Key>
+    <Property Name="CoveragePlan" Type="varchar" MaxLength="50" />
+    <Property Name="Gender" Type="varchar" MaxLength="5" />
+    <Property Name="Age" Type="int" />
+    <Property Name="NetPrice" Type="int" />
+    <Property Name="RateChartID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="masterModelStoreContainer">
+    <EntitySet Name="Contracts" EntityType="Self.Contracts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CoveragePlan" EntityType="Self.CoveragePlan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RateChart" EntityType="Self.RateChart" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeHomeAPI", "TakeHomeAPI\TakeHomeAPI.csproj", "{BF192B23-254B-4AA1-9982-C8FE296E1BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeHomeDataAccess", "TakeHomeDataAccess\TakeHomeDataAccess.csproj", "{EB571801-0F8C-4963-A85C-DEC96F5F57C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF192B23-254B-4AA1-9982-C8FE296E1BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF192B23-254B-4AA1-9982-C8FE296E1BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF192B23-254B-4AA1-9982-C8FE296E1BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF192B23-254B-4AA1-9982-C8FE296E1BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB571801-0F8C-4963-A85C-DEC96F5F57C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB571801-0F8C-4963-A85C-DEC96F5F57C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB571801-0F8C-4963-A85C-DEC96F5F57C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB571801-0F8C-4963-A85C-DEC96F5F57C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29AE4EBF-9563-4F9E-997B-2BA825D6729A}
+	EndGlobalSection
+EndGlobal

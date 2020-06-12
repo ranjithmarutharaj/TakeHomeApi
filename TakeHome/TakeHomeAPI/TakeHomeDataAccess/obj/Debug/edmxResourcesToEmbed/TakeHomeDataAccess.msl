@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="masterModelStoreContainer" CdmEntityContainer="TakeHomeEntities">
+    <EntitySetMapping Name="Contracts">
+      <EntityTypeMapping TypeName="masterModel.Contract">
+        <MappingFragment StoreEntitySet="Contracts">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="CoveragePlan" ColumnName="CoveragePlan" />
+          <ScalarProperty Name="NetPrice" ColumnName="NetPrice" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CoveragePlans">
+      <EntityTypeMapping TypeName="masterModel.CoveragePlan">
+        <MappingFragment StoreEntitySet="CoveragePlan">
+          <ScalarProperty Name="CoveragePlan1" ColumnName="CoveragePlan" />
+          <ScalarProperty Name="EligibilityDateFrom" ColumnName="EligibilityDateFrom" />
+          <ScalarProperty Name="EligibilityDateTo" ColumnName="EligibilityDateTo" />
+          <ScalarProperty Name="EligibilityCountry" ColumnName="EligibilityCountry" />
+          <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RateCharts">
+      <EntityTypeMapping TypeName="masterModel.RateChart">
+        <MappingFragment StoreEntitySet="RateChart">
+          <ScalarProperty Name="CoveragePlan" ColumnName="CoveragePlan" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="NetPrice" ColumnName="NetPrice" />
+          <ScalarProperty Name="RateChartID" ColumnName="RateChartID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="masterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Contracts">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+          <Property Name="Address" Type="varchar" MaxLength="50" />
+          <Property Name="Gender" Type="varchar" MaxLength="5" />
+          <Property Name="Country" Type="varchar" MaxLength="10" />
+          <Property Name="SaleDate" Type="date" />
+          <Property Name="CoveragePlan" Type="varchar" MaxLength="10" />
+          <Property Name="NetPrice" Type="int" />
+          <Property Name="DOB" Type="date" />
+        </EntityType>
+        <EntityType Name="CoveragePlan">
+          <Key>
+            <PropertyRef Name="PlanID" />
+          </Key>
+          <Property Name="CoveragePlan" Type="varchar" MaxLength="50" />
+          <Property Name="EligibilityDateFrom" Type="date" />
+          <Property Name="EligibilityDateTo" Type="date" />
+          <Property Name="EligibilityCountry" Type="varchar" MaxLength="20" />
+          <Property Name="PlanID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RateChart">
+          <Key>
+            <PropertyRef Name="RateChartID" />
+          </Key>
+          <Property Name="CoveragePlan" Type="varchar" MaxLength="50" />
+          <Property Name="Gender" Type="varchar" MaxLength="5" />
+          <Property Name="Age" Type="nvarchar" MaxLength="50" />
+          <Property Name="NetPrice" Type="int" />
+          <Property Name="RateChartID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="masterModelStoreContainer">
+          <EntitySet Name="Contracts" EntityType="Self.Contracts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CoveragePlan" EntityType="Self.CoveragePlan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RateChart" EntityType="Self.RateChart" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="masterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Contract">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Gender" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="SaleDate" Type="DateTime" Precision="0" />
+          <Property Name="CoveragePlan" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="NetPrice" Type="Int32" />
+          <Property Name="DOB" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="CoveragePlan">
+          <Key>
+            <PropertyRef Name="PlanID" />
+          </Key>
+          <Property Name="CoveragePlan1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EligibilityDateFrom" Type="DateTime" Precision="0" />
+          <Property Name="EligibilityDateTo" Type="DateTime" Precision="0" />
+          <Property Name="EligibilityCountry" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PlanID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RateChart">
+          <Key>
+            <PropertyRef Name="RateChartID" />
+          </Key>
+          <Property Name="CoveragePlan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Gender" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Age" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NetPrice" Type="Int32" />
+          <Property Name="RateChartID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TakeHomeEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Contracts" EntityType="Self.Contract" />
+          <EntitySet Name="CoveragePlans" EntityType="Self.CoveragePlan" />
+          <EntitySet Name="RateCharts" EntityType="Self.RateChart" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="masterModelStoreContainer" CdmEntityContainer="TakeHomeEntities">
+          <EntitySetMapping Name="Contracts">
+            <EntityTypeMapping TypeName="masterModel.Contract">
+              <MappingFragment StoreEntitySet="Contracts">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+                <ScalarProperty Name="CoveragePlan" ColumnName="CoveragePlan" />
+                <ScalarProperty Name="NetPrice" ColumnName="NetPrice" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CoveragePlans">
+            <EntityTypeMapping TypeName="masterModel.CoveragePlan">
+              <MappingFragment StoreEntitySet="CoveragePlan">
+                <ScalarProperty Name="CoveragePlan1" ColumnName="CoveragePlan" />
+                <ScalarProperty Name="EligibilityDateFrom" ColumnName="EligibilityDateFrom" />
+                <ScalarProperty Name="EligibilityDateTo" ColumnName="EligibilityDateTo" />
+                <ScalarProperty Name="EligibilityCountry" ColumnName="EligibilityCountry" />
+                <ScalarProperty Name="PlanID" ColumnName="PlanID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RateCharts">
+            <EntityTypeMapping TypeName="masterModel.RateChart">
+              <MappingFragment StoreEntitySet="RateChart">
+                <ScalarProperty Name="CoveragePlan" ColumnName="CoveragePlan" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="NetPrice" ColumnName="NetPrice" />
+                <ScalarProperty Name="RateChartID" ColumnName="RateChartID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

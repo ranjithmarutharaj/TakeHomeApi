@@ -1,0 +1,11 @@
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\bin\Debug\TakeHomeDataAccess.dll.config
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\bin\Debug\TakeHomeDataAccess.dll
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\bin\Debug\TakeHomeDataAccess.pdb
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\obj\Debug\TakeHomeDataAccess.csprojAssemblyReference.cache
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\obj\Debug\TakeHomeDataAccess.csproj.CopyComplete
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\obj\Debug\TakeHomeDataAccess.dll
+C:\Users\Hp\Desktop\TakeHome\TakeHomeAPI\TakeHomeDataAccess\obj\Debug\TakeHomeDataAccess.pdb
